@@ -154,3 +154,87 @@ Feature | Technologies
 Data Storage | `Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web 3.0 stack.` The primary objective of Swarm is to provide a decentralized and redundant store for ethereum's public record, in particular, to store and distribute dapp code and data as well as blockchain data.
 Web Technology |  Web 3.0 is an internet where core services like DNS and digital identity are decentralized. `Ethereum is perfectly suited to serve as shared back-end to a decentralized and secure internet`. Ethereum uses Web 3.0 as a platform for a decentralized application (DApp)
 Client/Node Implementation | `Ethereum clients` are used for sending and receiving data. Wallet or custom applications connect to a client for transactions, may be for sending or receiving ethers, deploying a contract, executing a contract, initiating mining, etc. `Ethereum has many client/ node implementation as go-ethereum, parity, cpp-ethereum, pyethapp, etc.` Smart Contracts in ethereum are implemented using languages like Solidity, Lisp, etc.
+
+
+### 𝑪𝒐𝒏𝒔𝒆𝒏𝒔𝒖𝒔 𝑨𝒍𝒈𝒐𝒓𝒊𝒕𝒉𝒎𝒔 𝒊𝒏 𝑬𝒕𝒉𝒆𝒓𝒆𝒖𝒎
+
+> - A fundamental problem in distributed computing and multi-agent systems is to achieve overall system reliability in the presence of a number of faulty processes. 
+> - This often requires processes to agree on some data value that is needed during computation. 
+> - The algorithm involved in such processes is Consensus algorithm. 
+> - There are mainly 3 types of consensus algorithms:
+>   - Proof of Work (PoW)
+>   - Proof of Stake (PoS)
+>   - Proof of Authority (PoA)
+
+- 𝑷𝒓𝒐𝒐𝒇 𝒐𝒇 𝑾𝒐𝒓𝒌 (𝑷𝒐𝑾)
+> - Mining is the process of dedicating efforts to strengthen the series of transactions in one block over other competitor blocks.
+> - Any node on public blockchain can act as a miner. 
+> - The only requirement is that it should support resource requirement for mining in PoW.
+> - In Proof of Work (PoW), miner has to solve the puzzle for validating the new block to be added. 
+> - The first miner who gets the solution publishes it to the network. 
+> - The difficulty level of puzzle changes for different blocks. 
+> - Hence, the amount of computations differs for different blocks.
+> - Hashing function takes input data and converts to Hash value also known as the message digest which is unique.
+> - The hash value cannot be used for recreating the original data. 
+> - Hence, the hashes used in such case are called as One Way Hashes
+> - PoW uses GHOST protocol and ETHash algorithm. But, PoW is environmentally unfriendly due to its high power consumption
+
+- 𝑷𝒓𝒐𝒐𝒇 𝒐𝒇 𝑺𝒕𝒂𝒌𝒆 (𝑷𝒐𝑺)
+> - This algorithm is similar to PoW, the only difference is that here there is no competition as in PoW. 
+> - Here, the network itself chooses the node which would validate the transaction known as the validator (not a miner). 
+> - If node selected as validator does not validate the transaction then network selects next validator and process goes on untill the transaction is validated by any node. 
+> - PoS uses CASPER protocol. 
+
+- 𝑷𝒓𝒐𝒐𝒇 𝒐𝒇 𝑨𝒖𝒕𝒉𝒐𝒓𝒊𝒕𝒚 (𝑷𝒐𝑨)
+> - In this consensus algorithm, network allows for only those nodes which are authorized for validating the transaction.
+> - The chain has to be signed off by the majority of authorities, in which case it becomes a part of the permanent record.
+> -  This makes it easier to maintain a private chain and keep the block issuers accountable.
+
+![image](https://user-images.githubusercontent.com/68887544/191476797-64e674c5-7e2c-4eb4-80f9-b4f97f714254.png)
+
+Reference:
+```
+C. Saraf and S. Sabadra, “Blockchain platforms: A compendium,” 2018 IEEE International Conference on Innovative Research and Development (ICIRD), doi: 10.1109/ICIRD.2018.8376323
+```
+
+---
+
+### 𝑾𝒉𝒂𝒕 𝒊𝒔 𝒂 𝒔𝒎𝒂𝒓𝒕 𝒄𝒐𝒏𝒕𝒓𝒂𝒄𝒕?
+
+> - A smart contract is a computer program having selfverifying, self-executing, tamper-resistant properties.
+> - It takes transaction as a input, executes the corresponding code and triggers the output events.
+> - All the transaction information are present in a smart contract and it executes automatically. 
+> - The programming language Solidity is used to implement the smart contract in various blockchain platforms.
+
+### 𝑾𝒉𝒂𝒕 𝒂𝒓𝒆 𝒔𝒐𝒎𝒆 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒊𝒔𝒕𝒊𝒄𝒔 𝒐𝒇 𝒂 𝒔𝒎𝒂𝒓𝒕 𝒄𝒐𝒏𝒕𝒓𝒂𝒄𝒕?
+
+> - Some characterizes of a smart contract are:
+>   - Smart contract are machine readable code run on blockchain platform
+>   - Smart contracts are part of one application program
+>   - Smart contracts are event driven program
+>   - Smart contracts are autonomous once created no need to monitor
+>   - Smart contracts are distributed
+
+### 𝑾𝒉𝒂𝒕 𝒊𝒔 𝒔𝒐𝒍𝒊𝒅𝒊𝒕𝒚?
+
+> - Solidity is a high level language used to implement smart contracts.
+> - Developing blockchian platform of solidity are Ethereum,ErisDB,Zeppelin and Counterparty.
+
+Reference:
+```
+B. K. Mohanta, S. S. Panda, and D. Jena, “An Overview of Smart Contract and Use Cases in Blockchain Technology,” 2018 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Jul. 2018, doi: 10.1109/icccnt.2018.8494045.
+```
+
+---
+
+### 𝑾𝒉𝒂𝒕 𝒊𝒔 𝒂 𝒅𝒆𝒄𝒆𝒏𝒕𝒓𝒂𝒍𝒊𝒛𝒆𝒅 𝒂𝒑𝒑𝒍𝒊𝒄𝒂𝒕𝒊𝒐𝒏?
+
+> - A decentralized application is also referred to as a DApp.
+> - DApps are open-source applications based on the Ethereum blockchain where a consensus is maintained between the user and programmer during the development process. 
+> - The source code is available for examination and the application is stored in the blockchain to ensure trust and transparency.
+> - The Ethereum blockchain is recognized as a biggest platform for decentralized applications.
+
+Reference:
+```
+S. Sayeed, H. Marco-Gisbert, and T. Caira, “Smart Contract: Attacks and Protections,” IEEE Access, vol. 8, pp. 24416–24427, 2020, doi: 10.1109/ACCESS.2020.2970495.
+```
